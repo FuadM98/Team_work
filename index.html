@@ -4,34 +4,68 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <title>Team project 1</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="./index.html">logo</a>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">Blogs</a></li>
-        </ul>
-      </nav>
-      <button type="button">Gift Finder</button>
+    <header class="header">
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a href="./index.html" class="header-logo">logo</a>
+          <ul class="header-list">
+            <li class="header-list-item">
+              <a href="./index.html" class="header-list-item-link">Home</a>
+            </li>
+            <li class="header-list-item">
+              <a href="" class="header-list-item-link">About Us</a>
+            </li>
+            <li class="header-list-item">
+              <a href="" class="header-list-item-link">Services</a>
+            </li>
+            <li class="header-list-item">
+              <a href="" class="header-list-item-link">Blogs</a>
+            </li>
+          </ul>
+        </nav>
+        <button type="button" class="header-btn">Gift Finder</button>
+      </div>
     </header>
     <main>
-      <section>
-        <h1>Find a gift for your wife or girlfriend</h1>
-        <p>
-          Struggling to find a gift for your wife or girlfriend? No problem!
-        </p>
-        <button type="button">Find gift now</button>
-        <img
-          src="./img/photo1.jpg"
-          alt="a happy smiling couple"
-          width="720"
-          height="700"
-        />
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="hero-wrap">
+            <div class="hero-box">
+              <h1 class="hero-title">
+                Find a gift for your wife or girlfriend
+              </h1>
+              <p class="hero-text">
+                Struggling to find a gift for your wife or girlfriend? No
+                problem!
+              </p>
+              <button type="button" class="hero-btn">Find gift now</button>
+            </div>
+          </div>
+          <img
+            src="./img/photo1.jpg"
+            alt="a happy smiling couple"
+            width="720"
+            height="700"
+          />
+        </div>
       </section>
       <section>
         <img src="./img/media.jpg" alt="media1" width="720" height="600" />
@@ -44,51 +78,71 @@
         </p>
         <a href="">Learn More</a>
       </section>
-      <section>
-        <h2>Gifts for all Occasions</h2>
-        <p>“Try our web app to find the best gifts for all occasions”</p>
-        <ul>
-          <li>
-            <img
-              src="./img/Media1.jpg"
-              alt="Birthday"
-              width="270"
-              height="270"
-            />
-            <h3>Birthday</h3>
-            <a href="">See More&#8250; </a>
-          </li>
-          <li>
-            <img
-              src="./img/Rectangle.jpg"
-              alt="Anniversary"
-              width="270"
-              height="270"
-            />
-            <h3>Anniversary</h3>
-            <a href="">See More&#8250;</a>
-          </li>
-          <li>
-            <img
-              src="./img/Media (1).jpg"
-              alt="Valentine's Day"
-              width="270"
-              height="270"
-            />
-            <h3>Valentine's Day</h3>
-            <a href="">See More&#8250;</a>
-          </li>
-          <li>
-            <img
-              src="./img/Rectangle (1).jpg"
-              alt="Christmas"
-              width="270"
-              height="270"
-            />
-            <h3>Christmas</h3>
-            <a href="">See More&#8250;</a>
-          </li>
-        </ul>
+      <section class="gifts">
+        <div class="second-container">
+          <h2 class="gifts-title">Gifts for all Occasions</h2>
+          <p class="gifts-text">
+            “Try our web app to find the best gifts for all occasions”
+          </p>
+          <ul class="gifts-list">
+            <li>
+              <a href="" class="gifts-list-item-link">
+                <img
+                  src="./img/Media1.jpg"
+                  alt="Birthday"
+                  width="270"
+                  height="270"
+                />
+                <div class="gifts-list-item-wrap">
+                  <h3 class="gifts-list-item-title">Birthday</h3>
+                  <p>See More&#8250;</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="" class="gifts-list-item-link">
+                <img
+                  src="./img/Rectangle.jpg"
+                  alt="Anniversary"
+                  width="270"
+                  height="270"
+                />
+                <div class="gifts-list-item-wrap">
+                  <h3 class="gifts-list-item-title">Anniversary</h3>
+                  <p>See More&#8250;</p>
+                </div></a
+              >
+            </li>
+            <li>
+              <a href="" class="gifts-list-item-link">
+                <img
+                  src="./img/Media (1).jpg"
+                  alt="Valentine's Day"
+                  width="270"
+                  height="270"
+                />
+                <div class="gifts-list-item-wrap">
+                  <h3 class="gifts-list-item-title">Valentine's Day</h3>
+                  <p>See More&#8250;</p>
+                </div></a
+              >
+            </li>
+            <li>
+              <a href="" class="gifts-list-item-link">
+                <img
+                  src="./img/Rectangle (1).jpg"
+                  alt="Christmas"
+                  width="270"
+                  height="270"
+                />
+                <div class="gifts-list-item-wrap">
+                  <h3 class="gifts-list-item-title">Christmas</h3>
+                  <p>See More&#8250;</p>
+                </div></a
+              >
+            </li>
+          </ul>
+        </div>
       </section>
       <section>
         <h2>Text</h2>
